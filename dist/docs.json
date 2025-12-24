@@ -1,0 +1,370 @@
+{
+  "api": {
+    "name": "CapMindboxPlugin",
+    "slug": "capmindboxplugin",
+    "docs": "",
+    "tags": [],
+    "methods": [
+      {
+        "name": "echo",
+        "signature": "(options: { value: string; }) => Promise<{ value: string; }>",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "{ value: string; }"
+          }
+        ],
+        "returns": "Promise<{ value: string; }>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "echo"
+      },
+      {
+        "name": "initialize",
+        "signature": "(options: InitializationData) => Promise<void>",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "InitializationData"
+          }
+        ],
+        "returns": "Promise<void>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "InitializationData"
+        ],
+        "slug": "initialize"
+      },
+      {
+        "name": "getDeviceUUID",
+        "signature": "() => Promise<{ deviceUUID: string; }>",
+        "parameters": [],
+        "returns": "Promise<{ deviceUUID: string; }>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "getdeviceuuid"
+      },
+      {
+        "name": "getToken",
+        "signature": "() => Promise<{ token: string; }>",
+        "parameters": [],
+        "returns": "Promise<{ token: string; }>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "gettoken"
+      },
+      {
+        "name": "updateToken",
+        "signature": "(options: { token: string; }) => Promise<void>",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "{ token: string; }"
+          }
+        ],
+        "returns": "Promise<void>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "updatetoken"
+      },
+      {
+        "name": "registerInAppCallbacks",
+        "signature": "(callbacks: InAppCallback[]) => Promise<void>",
+        "parameters": [
+          {
+            "name": "callbacks",
+            "docs": "",
+            "type": "InAppCallback[]"
+          }
+        ],
+        "returns": "Promise<void>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "InAppCallback"
+        ],
+        "slug": "registerinappcallbacks"
+      },
+      {
+        "name": "executeAsyncOperation",
+        "signature": "(options: ExecuteAsyncOperationPayload) => Promise<void>",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "ExecuteAsyncOperationPayload"
+          }
+        ],
+        "returns": "Promise<void>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "ExecuteAsyncOperationPayload"
+        ],
+        "slug": "executeasyncoperation"
+      },
+      {
+        "name": "executeSyncOperation",
+        "signature": "(options: ExecuteSyncOperationPayload) => Promise<any>",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "ExecuteSyncOperationPayload"
+          }
+        ],
+        "returns": "Promise<any>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "ExecuteSyncOperationPayload"
+        ],
+        "slug": "executesyncoperation"
+      },
+      {
+        "name": "setLogLevel",
+        "signature": "(options: { level: number; }) => Promise<void>",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "{ level: number; }"
+          }
+        ],
+        "returns": "Promise<void>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "setloglevel"
+      },
+      {
+        "name": "getSdkVersion",
+        "signature": "() => Promise<{ sdkVersion: string; }>",
+        "parameters": [],
+        "returns": "Promise<{ sdkVersion: string; }>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "getsdkversion"
+      },
+      {
+        "name": "pushDelivered",
+        "signature": "(options: { uniqKey: string; }) => Promise<void>",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "{ uniqKey: string; }"
+          }
+        ],
+        "returns": "Promise<void>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "pushdelivered"
+      },
+      {
+        "name": "updateNotificationPermissionStatus",
+        "signature": "(options: { granted: boolean; }) => Promise<void>",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "{ granted: boolean; }"
+          }
+        ],
+        "returns": "Promise<void>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "updatenotificationpermissionstatus"
+      }
+    ],
+    "properties": []
+  },
+  "interfaces": [
+    {
+      "name": "InitializationData",
+      "slug": "initializationdata",
+      "docs": "",
+      "tags": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "domain",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string"
+        },
+        {
+          "name": "endpointId",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string"
+        },
+        {
+          "name": "subscribeCustomerIfCreated",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "boolean | undefined"
+        },
+        {
+          "name": "shouldCreateCustomer",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "boolean | undefined"
+        },
+        {
+          "name": "previousInstallId",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string | undefined"
+        },
+        {
+          "name": "previousUuid",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string | undefined"
+        }
+      ]
+    },
+    {
+      "name": "InAppCallback",
+      "slug": "inappcallback",
+      "docs": "",
+      "tags": [],
+      "methods": [
+        {
+          "name": "getName",
+          "signature": "() => string",
+          "parameters": [],
+          "returns": "string",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "slug": "getname"
+        },
+        {
+          "name": "onInAppClick",
+          "signature": "(id: string, redirectUrl: string, payload: string) => void",
+          "parameters": [
+            {
+              "name": "id",
+              "docs": "",
+              "type": "string"
+            },
+            {
+              "name": "redirectUrl",
+              "docs": "",
+              "type": "string"
+            },
+            {
+              "name": "payload",
+              "docs": "",
+              "type": "string"
+            }
+          ],
+          "returns": "void",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "slug": "oninappclick"
+        },
+        {
+          "name": "onInAppDismissed",
+          "signature": "(id: string) => void",
+          "parameters": [
+            {
+              "name": "id",
+              "docs": "",
+              "type": "string"
+            }
+          ],
+          "returns": "void",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "slug": "oninappdismissed"
+        }
+      ],
+      "properties": []
+    },
+    {
+      "name": "ExecuteAsyncOperationPayload",
+      "slug": "executeasyncoperationpayload",
+      "docs": "",
+      "tags": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "operationSystemName",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string"
+        },
+        {
+          "name": "operationBody",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "any"
+        }
+      ]
+    },
+    {
+      "name": "ExecuteSyncOperationPayload",
+      "slug": "executesyncoperationpayload",
+      "docs": "",
+      "tags": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "operationSystemName",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string"
+        },
+        {
+          "name": "operationBody",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "any"
+        },
+        {
+          "name": "onSuccess",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "(data: any) => void"
+        },
+        {
+          "name": "onError",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "((error: any) => void) | undefined"
+        }
+      ]
+    }
+  ],
+  "enums": [],
+  "typeAliases": [],
+  "pluginConfigs": []
+}
